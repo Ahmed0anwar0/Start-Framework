@@ -8,11 +8,11 @@ import Contact from './Components/Contact/Contact'
 import About from './Components/About/About'
 import Portfolio from './Components/Portfolio/Portfolio'
 import Home from './Components/Home/Home'
-import { createBrowserRouter , RouterProvider } from 'react-router-dom'
+import { createBrowserRouter , createHashRouter, RouterProvider } from 'react-router-dom'
 import Layout from './Components/Layout/Layout'
 
 
-  let router = createBrowserRouter([
+  let router = createHashRouter([
     { 
       path: '', element: <Layout/>, children:[
         {index: true,element:<Home/>},
